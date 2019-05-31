@@ -27,6 +27,12 @@ body {
   clear: both;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  }
+
 h1,
 h2,
 h3,
@@ -231,23 +237,25 @@ input[type=submit] {
   }
   /* .wrapper { */
     /* width: 880px; */
-  }
+  /* } */
    /* .main-section {  */
      /* width: 60%;  */
    /* }  */
 }
 @media screen and (max-width: 768px) {
-  /* #masthead { */
-    /* width: 720px; */
+  #masthead { 
+      margin: auto;
+      width: 100%;
+      /* text-align: center; */
   }
   
   /* #main-container {  */
      /* width: 100%;  */
     /* float:  */
-  }
+  /* } */
   /* .container { */
     /* width: 100%; */
-  }
+  /* } */
    .main-section { 
      width: 100%; 
     /* float: center; */
@@ -257,18 +265,51 @@ input[type=submit] {
     height: auto;
   }
 }
+
+
 @media screen and (max-width: 640px) {
- /* #main-container { */
-   /* float: none; */
-   /* width: 100%; */
- /* } */
- 
-  .navsection, .container, .main-section {
-   float: none;
-   width: 100%
- }
- 
-  /* .wrapper { */
-    /* width: 500px; */
+
+
+  /* body { */
+    /* width: 100%; */
+  /* } */
+
+  #main-container {  
+   margin: auto; 
+   width: 100%; 
   }
-}
+
+ #logo {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+ }
+
+   /* .main-section { 
+   margin: auto; 
+   width: 100%;
+ } */
+
+ /* .container {
+  margin: auto; 
+  width: 100%;     */
+ /* } */
+
+ /* .flex-container {
+   flex-direction: column; 
+   margin: auto; 
+   width: 100%;
+ } */
+
+  .nav {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  #masthead { 
+    margin: auto;
+    width: 100%;
+    /* text-align: center; */
+  }
+} 
